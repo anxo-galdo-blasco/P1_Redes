@@ -1,0 +1,119 @@
+<!DOCTYPE html>		<!--Tipo del documento, para esto necesitamos HTML-->
+<html lang="es">	<!--Idioma del HTML, posibilidad de cambio si es necesario-->
+<head>				<!--Cabecera del HTML-->
+    <meta charset="UTF-8">	<!--Tipo de codificación del documento-->
+    <title>Redes P1 - Anxo Galdo Blasco</title>		<!--Título del documento para que aparezca en la pestaña cuando se accede al HTML-->
+													
+    <style>		/*Inicio del CSS*/
+	    /*Ajustes generales del CSS: que se vean mejor los mínimos pedidos del HTML*/
+        * {
+            margin: 0;						/*Márgenes por defecto*/
+            padding: 0;						/*Espaciados por defecto*/
+            box-sizing: border-box;			/*Gestión de como se verán los elementos*/
+            font-family: Arial, sans-serif;	/*Fuente y familia de texto de los caracteres que aparecen en todo el HTML a menos que se cambie internamente en un bloque de estilo*/
+        }
+		
+		/*Estilo correspondiente al cuerpo de la página HTML*/
+        body {
+            background: linear-gradient(to right, #2271b3, #00f2fe);	/*Cambio de izquierda a derecha del color en gradiente especificado*/
+            min-height: 100vh;											/*Altura mínima de vóxeles que usamos*/
+            display: flex;												/*Display por defecto, se podría cambiar*/
+            justify-content: center;									/*Todos los elementos que haya sobre el fondo salen con texto justificado al centro*/
+            align-items: center;										/*Lo mismo de arriba pero centrados los elementos en lugar del texto*/
+        }
+		
+		/*Al haberle dado formato de carta, para ajustar el texto al centro le doy estilo también*/
+        .card {
+            background: white;							/*Color de fondo a blanco*/
+            width: 400px;								/*Ancho de la card*/
+            padding: 25px;								/*Distancia entre los márgenes y el texto*/
+            border-radius: 12px;						/*Píxeles que conforman el borde*/
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);		/*Sombreado a píxeles y coloreado*/
+            text-align: center;							/*Alineación de todo el texto dentro de la card: al centro*/
+        }
+		
+		/*Estilo del header principal (título)*/
+        h1 {
+            color: #333;			/*Color del modelo sRGB permitido en el estándar w3c (todos los siguientes que hago, igual)*/
+            margin-bottom: 10px;	/*Margen de espacio que dejamos por debajo del header (mismo con top, left y right si los codificase)*/
+        }
+		
+		/*Estilo del header secundario (subtítulo)*/
+        h2 {
+            color: #666;
+            margin-bottom: 20px;
+        }
+		
+		/*Estilo del/os parágrafo/s*/
+        p {
+            color: #555;
+            line-height: 1.6;	/*Altura de linea del parágrafo (bastante explicativo por si mismo)*/
+            margin-bottom: 15px;
+        }
+		
+        /*Botón para el link del FreeDNS-->
+        .btn {
+            display: inline-block;	/*Como se gestiona enseñar el botón en pantalla*/
+            text-decoration: none;	/*Decoración si la tuviese*/
+            background: #4facfe;	/*Color del botón en sí*/
+            color: white;			/*Color del texto en el botón*/
+            padding: 10px 20px;		/*Tamaño de espaciados para colocar el texto sobre el formato*/
+            border-radius: 25px;	/*Píxeles que conforman el borde*/
+            font-weight: bold;		/*Texto en negrita*/
+            transition: 0.3s;		/*Tiempo de espera hasta la redirección*/
+        }
+		
+		/*Estilo que gestiona el cambio que se produce en el botón cuando te pones encima de él con el mouse*/
+        .btn:hover {
+            background: #00c6ff;	/*Cambio del color de fondo*/
+            transform: scale(1.05);	/*Cambio en tamaño*/
+        }
+
+        /*Estilo para mostrar mi email*/
+        .email {
+            color: #4facfe;			/*Color del hipervínculo para hacer el mailto*/
+            text-decoration: none;	/*Decoración si la hubiese*/
+        }
+		
+		/*Lo mismo que con el botón pero para cambios al posarnos sobre el email*/
+        .email:hover {
+            text-decoration: underline;	/*Mostramos un subrayado sobre él simplemente*/
+        }
+    </style> 										
+</head>												
+
+<body>	<!--Inicio del cuerpo del HTML-->
+
+    <div class="card">						<!--División del cuerpo del HTML con la clase card-->
+
+        <h1>Mi Web de Prueba</h1>			<!--Header principal-->
+        <h2>Ejemplo de HTML para P1</h2>	<!--Header secundario-->
+
+        <p>									<!--Parágrafo 1 con título de parágrafo(podría estar todo en un parámetro, pero es mas eficiente darle estilo así separado)-->
+            Datos De Contacto: 				
+        </p>
+
+        <p>									<!--Parágrafo 2 con el nombre completo y email de contacto (directo con un mailto para redirección)-->
+            Alumno: Anxo Galdo Blasco <br>	
+            Email:
+            <a class="email" href="mailto:anxo.galdo.blasco@udc.es">
+                anxo.galdo.blasco@udc.es
+            </a>							<!--Clase con nombre email haciendo referencia al mailto-->
+        </p>
+
+        <p>									<!--Parágrafo 3 con el botón funcional con nombre para acceder a FreeDNS-->
+            Accede a FreeDNS aquí:
+        </p>
+
+        <a					
+            class="btn"
+            href="https://freedns.afraid.org"
+            target="_blank"
+        >									<!--Clase botón para la redirección hacia FreeDNS-->
+            Free DNS
+        </a>
+
+    </div>										
+
+</body>												
+</html>
