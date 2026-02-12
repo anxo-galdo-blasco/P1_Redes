@@ -1,6 +1,6 @@
 # P1_Redes
 
-La URL completa y funcional del subdominio es : [a link] (https://galdo-blasco-anxo.mooo.com)
+La URL completa y funcional del subdominio es : https://galdo-blasco-anxo.mooo.com
 
 Captura del Tráfico: 
 He aplicado el filtro "(dns.qry.name == "galdo-blasco-anxo.mooo.com" && dns.qry.type == 1) || (dns.resp.name == "galdo-blasco-anxo.mooo.coms" && dns.resp.type == 1)" en Wireshark sobre el tráfico del adaptador correspondiente a WiFi
